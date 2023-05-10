@@ -50,7 +50,8 @@ Un cliente quiere explorar el catalogo de audifonos disponibles y realizar una c
 ## Diagrama de flujo
 ```mermaid
 graph TD;
-    Inicio-->Caracteres;
+    Inicio-->Caracter:Identificaciones[50]
+    Caracter: nombres[50];
     A-->C;
     B-->D;
     C-->D;
