@@ -48,3 +48,10 @@ Un cliente quiere explorar el catalogo de audifonos disponibles y realizar una c
 <hr>
 
 ## Diagrama de flujo
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
