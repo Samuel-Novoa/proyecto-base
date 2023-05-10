@@ -28,5 +28,5 @@ Un cliente quiere explorar el catalogo de audifonos disponibles y realizar una c
 
 ## Equipo de desarrollo
 | **Desarrollo Logico** | **Codificardor de codigo** | **Tester** |
--------------------------------------------------------------------
+|-----|-----|
 | Samuel Jeronimo Novoa Suta | Samuel Jeronimo Novoa Suta | Samuel Jeronimo Novoa Suta |
