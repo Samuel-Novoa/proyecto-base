@@ -43,6 +43,5 @@ Un cliente quiere explorar el catalogo de audifonos disponibles y realizar una c
 3. El cliente selecciona un modelo de audífono de la lista.
 4. La aplicación verifica si hay suficiente stock para el modelo seleccionado.
 5. Si hay stock, la aplicación confirma la venta y actualiza el inventario.
-6. Si no hay stock, la aplicación informa al cliente y le permite seleccionar otro modelo o salir de la aplicación.
-|
+6. Si no hay stock, la aplicación informa al cliente y le permite seleccionar otro modelo o salir de la aplicación. |
 |---|
