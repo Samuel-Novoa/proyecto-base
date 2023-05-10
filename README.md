@@ -1,5 +1,5 @@
-# proyecto-base
-## Samuel Jeronimo Novoa Suta
+# Proyecto Base
+Samuel Jeronimo Novoa Suta
 
 ## Enfoque
 Se le ha asignado el desarrollo de una aplicación de consola simple para gestionar un proyecto de ventas de audífonos. La aplicación debe permitir a los usuarios ingresar información básica sobre los productos, como modelo, precio y cantidad en stock. Además, debe ofrecer la posibilidad de realizar ventas y actualizar el inventario de forma adecuada.
@@ -34,7 +34,7 @@ Un cliente quiere explorar el catalogo de audifonos disponibles y realizar una c
 <hr>
 
 ## Aproximacion caso de uso
-| **Nombre:** Tienda de audifonos
+**Nombre:** Tienda de audifonos.
 **Actores:** Clientes, Desarrolladores, Administradores de proyecto.
 **Porposito:** Gestionar todo el proceso de una tienda de audífonos, contando con stock, ventas y descripciones de productos.
 **Curso Normal de Eventos:**
@@ -43,5 +43,8 @@ Un cliente quiere explorar el catalogo de audifonos disponibles y realizar una c
 3. El cliente selecciona un modelo de audífono de la lista.
 4. La aplicación verifica si hay suficiente stock para el modelo seleccionado.
 5. Si hay stock, la aplicación confirma la venta y actualiza el inventario.
-6. Si no hay stock, la aplicación informa al cliente y le permite seleccionar otro modelo o salir de la aplicación. |
-|---|
+6. Si no hay stock, la aplicación informa al cliente y le permite seleccionar otro modelo o salir de la aplicación.
+
+<hr>
+
+## Diagrama de flujo
