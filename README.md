@@ -1,5 +1,5 @@
 # Proyecto Base
-Samuel Jeronimo Novoa Suta
+> Author: Samuel Jeronimo Novoa Suta
 
 ## Enfoque
 Se le ha asignado el desarrollo de una aplicación de consola simple para gestionar un proyecto de ventas de audífonos. La aplicación debe permitir a los usuarios ingresar información básica sobre los productos, como producto, precio y cantidad.
