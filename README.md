@@ -1,3 +1,14 @@
+
+```mermaid
+flowchart TB
+    A([Inicio]) --> B[Caracteristicas: Identificaciones 50<br>Caracter: nombres 50<br>Caracter: cursos 50<br>Real: notauno 50<br>Real: notados 50<br>Real: notatres 50<br>Entero: numEstudiante, i<br>Caracter: identificacion, nombre, curso<br>Real: promedio <- 0] --> C{{Digite el numero de estudiantes}} --> D[/leer: numEstudiantes\] --> E[\para: i = 0<br>hasta: numEstudiantes - 1<br>incremento: 1/];
+    E --> F[\para: i = 0<br>hasta: numEstudiantes - 1<br>incremento: 1/];
+    F --> G1[\para: i = 0<br>hasta: numEstudiantes - 1<br>incremento: 1/];
+    G([Identificaciones:i <- identificacion<br>nombres:i <- nombre<br>cursos:i]) --> E
+    E --> H{{Digite la identificacion del estudiante}} --> I[/leer: identificacion\] --> J{{Digite el nombre del estudiante}} --> K[/leer: nombre\] --> L[/Digite el curso del estudiante\] --> M{{leer: curso}} --> N[/Digita la nota 1 del estudiante\] --> O{{leer: notauno}} --> P[/Digite la nota 2 del estudiante\] --> Q{{leer: notados}} --> R[/Digite la nota 3 del estudiante\] --> S{{leer: notatres}};
+    S --> G;
+```
+
 # Proyecto Base
 Samuel Jeronimo Novoa Suta
 
@@ -48,11 +59,3 @@ Un cliente quiere explorar el catalogo de audifonos disponibles y realizar una c
 <hr>
 
 ## Diagrama de flujo
-```mermaid
-graph TD;
-    A[Inicio] --> B(Caracter:Identificaciones[50]
-    Caracter: nombres[50]);
-    A-->C;
-    B-->D;
-    C-->D;
-```
