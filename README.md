@@ -21,7 +21,7 @@ Aclaraciones:
 <br style="height:100px;"></br>
 
 ## Historial De Usario
-[PDF](https://github.com/Samuel-Novoa/proyecto-base/blob/main/Descripci%C3%B3n.pdf)
+[PDF](/Documentos/Descripci%C3%B3n.pdf)
 ### Descripción
 Como vendedor, se debe poder capturar el precio de los productos de una compra para obtener el descuento del 10% del total de la compra de los productos.
 
