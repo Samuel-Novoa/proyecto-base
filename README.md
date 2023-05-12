@@ -66,8 +66,8 @@ Como vendedor, se debe poder capturar el precio de los productos de una compra p
     
 ```mermaid
 flowchart TD;
-    A([Inicio]) --> B["Entero: codigoProductos [50]<br>Caracter: nombreProductos [50]<br>Real: precioProductos [50]<br>Entero: codigoProducto, descuento <- 10, cantidadProductos<br>Caracter: nombreProducto<br>Real: precioProducto, total <- 0>"] --> C{{Digite la cantidad de productos}} --> D[/Leer cantidadProductos\] --> E[\Para i <- 0 Hasta cantidadProductos-1 Hacer/];
-    E --> F[\Para i <- 0 Hasta cantidadProductos-1 Hacer/];
+    A([Inicio]) --> B["Entero: codigoProductos [50]<br>Caracter: nombreProductos [50]<br>Real: precioProductos [50]<br>Entero: codigoProducto, descuento <- 10, cantidadProductos<br>Caracter: nombreProducto<br>Real: precioProducto, total <- 0>"] --> C{{Digite la cantidad de productos}} --> D[/Leer cantidadProductos\] --> E[\"Para i <- 0 Hasta cantidadProductos-1 Hacer"/];
+    E --> F[\"Para i <- 0 Hasta cantidadProductos-1 Hacer"/];
     F --> G1["total <- (precioProductos[i] * descuento) / 100"];
     G1 --> F;
     F --> H1{{"Escribir "Descuento: " + descuento + "%"<br>Escribir "Total a pagar: " + total"}} --> I1([Fin]);
