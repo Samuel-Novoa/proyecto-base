@@ -21,12 +21,25 @@ Aclaraciones:
 <br style="height:100px;"></br>
 
 ## Historial De Usario
-[embed]descripcion.pdf[/embed]
+[PDF](https://github.com/Samuel-Novoa/proyecto-base/blob/main/Descripci%C3%B3n.pdf)
 ### Descripción
 Como vendedor, se debe poder capturar el precio de los productos de una compra para obtener el descuento del 10% del total de la compra de los productos.
 
 **Escenario [ 1 ]:**
 > ***Ingresar la información de los productos [ Código Producto | Nombre Del Producto | Cantidad Del Producto | Precio Del Producto ]***
+
++ **Given [** Soy el vendedor **]**
+    + Ingreso correctamente el código del producto
+    + Ingreso correctamente el nombre del producto
+    + Ingreso correctamente la cantidad del producto
+    + Ingreso correctamente el precio del producto
+
++ **Then [** Debo poder visualizar la información de la compra **]**
+    + Productos comprados
+    + Valor de los productos por unidad
+    + Valor de la compra total
+    + Valor del descuento total
+
 
 
 ### Equipo de desarrollo
@@ -37,19 +50,16 @@ Como vendedor, se debe poder capturar el precio de los productos de una compra p
 <br style="height:100px;"></br>
 
 ## Aproximacion caso de uso
-**Nombre:** Tienda de audifonos.
-**Actores:** Clientes, Desarrolladores, Administradores de proyecto.
-**Porposito:** Gestionar todo el proceso de una tienda de audífonos, contando con stock, ventas y descripciones de productos.
+**Nombre:** Tienda de audifonos<br>
+**Actores:** Clientes, Desarrolladores, Administradores de proyecto.<br>
+**Porposito:** Gestionar todo el proceso de una tienda de audífonos, contando con stock, ventas y descripciones de productos.<br>
 **Curso Normal de Eventos:**
-1. El cliente inicia la aplicación de la consola.
-2. La aplicación muestra una lista de audífonos disponibles con información básica (nombre, precio, cantidad en stock).
-3. El cliente selecciona un modelo de audífono de la lista.
-4. La aplicación verifica si hay suficiente stock para el modelo seleccionado.
-5. Si hay stock, la aplicación confirma la venta y actualiza el inventario.
-6. Si no hay stock, la aplicación informa al cliente y le permite seleccionar otro modelo o salir de la aplicación.
+1. El vendedor ingresa la cantidad de productos a agregar.
+2. El vendedor ingresa [ Código Producto | Nombre Del Producto | Cantidad Del Producto | Precio Del Producto ].
+3. Se calcula el descuento del total de los productos a partir de: [ ``` (PrecioTotal * 10 ) / 100 ``` ].
+4. Se muestra los productos, el precio de los productos por unidad, el totoal de la compra y el descuento.
 
 <br style="height:100px;"></br>
-
 ## Diagrama de flujo
 <details><summary>Desplegar</summary>
 <p>
