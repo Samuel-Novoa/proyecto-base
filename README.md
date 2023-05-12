@@ -70,7 +70,7 @@ flowchart TD;
     E --> F[\Para i <- 0 Hasta cantidadProductos-1 Hacer/];
     F --> G1["total <- (precioProductos[i] * descuento) / 100"];
     G1 --> F;
-    F --> H1{{Escribir "Descuento: " + descuento + "%"<br>Escribir "Total a pagar: " + total}} --> I1([Fin]);
+    F --> H1{{"Escribir "Descuento: " + descuento + "%"<br>Escribir "Total a pagar: " + total"}} --> I1([Fin]);
     G["Identificaciones[i] <- identificacion<br>nombres[i] <- nombre<br>cursos[i] <- curso<br>notauno[i] <- nota1<br>notados[i] <- nota2<br>notatres[i] <- nota3"] --> E
     E --> H{{Digite la identificacion del estudiante}} --> I[/leer: identificacion\] --> J{{Digite el nombre del estudiante}} --> K[/leer: nombre\] --> L[/Digite el curso del estudiante\] --> M{{leer: curso}} --> N[/Digita la nota 1 del estudiante\] --> O{{leer: notauno}} --> P[/Digite la nota 2 del estudiante\] --> Q{{leer: notados}} --> R[/Digite la nota 3 del estudiante\] --> S{{leer: notatres}};
     S --> G;
