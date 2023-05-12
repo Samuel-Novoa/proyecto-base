@@ -1,79 +1,41 @@
-// package JAVA;
+package JAVA;
 
 import java.util.*;
 
 public class proyecto {
 
-     public static LinkedHashMap<String, Integer> Audifono() {
-          LinkedHashMap<String, Integer> stk = new LinkedHashMap<>();
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] codigoProductos = new int[50];
+        String[] nombreProductos = new String[50];
+        double[] precioProductos = new double[50];
+        int codigoProducto;
+        String nombreProducto;
+        double precioProducto, total = 0;
+        int descuento = 10;
+        int cantidadProductos;
+        System.out.println("Digite la cantidad de productos: ");
+        cantidadProductos = sc.nextInt();
+        for(int i = 0; i < cantidadProductos; i++){
+            System.out.println("Codigo del producto [" + i +"]: ");
+            codigoProducto = sc.nextInt();
+            System.out.println("Digite el nombre del producto [" + i +"]: ");
+            nombreProducto = sc.next();
+            System.out.println("Digite el precio del producto [" + i +"]: ");
+            precioProducto = sc.nextDouble();
 
-          // Stock
-          String[] producto = { "Audifono 1", "Audifono 2", "Audifono 3", "Audifono 4" };
-          int[] stock = { 1, 2, 3, 4 };
+            codigoProductos[i] = codigoProducto;
+            nombreProductos[i] = nombreProducto;
+            precioProductos[i] += precioProducto;
+        }
 
-          // Agregar el stock y productos al mapa
-          for (int i = 0; i < producto.length; i++) {
-               stk.put(producto[i], stock[i]);
-          }
+        for(int i = 0; i < cantidadProductos; i++) {
+            total = (precioProductos[i] * descuento)/100;
+        }
 
-          return stk;
-     }
+        System.out.println("Descuento: " + descuento + "%");
+        System.out.println("Total a pagar: " + total);
 
-     public static void limpiarConsola() {
-          System.out.print("\033[H\033[2J");
-          System.out.flush();
-     }
-
-     public static void main(String[] args) {
-          LinkedHashMap<String, Integer> audifono = Audifono();
-          Scanner sc = new Scanner(System.in);
-
-          System.out.println("==============\n= Bienvenido =\n==============");
-          boolean ejecutando = true;
-          boolean stop = true;
-          while (ejecutando) {
-               System.out.print("1. Productos\n2. Stock\n3. Comprar\n4. Salir\nOPC: ");
-               int opc = sc.nextInt();
-               switch (opc) {
-                    case 1:
-                         while (stop) {
-                              limpiarConsola();
-                              System.out.println("=============\n= Productos =\n=============");
-                              for (String refAudi : audifono.keySet()) {
-                                   System.out.println("\t[ Articulo: " + refAudi + "]");
-                              }
-                              System.out.print("Salir [ 1 ]: ");
-                              String space = sc.next();
-                              if (space.equals("1")) {
-                                   stop = false;
-                              }
-                         }
-                         limpiarConsola();
-                         break;
-                    case 2:
-                         while (stop) {
-                              limpiarConsola();
-                              System.out.println("\t=========\n\t= Stock =\n\t=========");
-                              System.out.println("\t[ Articulo | Stock ]\n");
-                              for (String refAudi : audifono.keySet()) {
-                                   System.out.println("\t[ " + refAudi + " | " + audifono.get(refAudi) + " ]");
-                              }
-                              System.out.print("Salir [ s ]: ");
-                              String space = sc.next();
-                              if (space.equals("s")) {
-                                   stop = false;
-                              }
-                         }
-                         limpiarConsola();
-                         break;
-                    case 3:
-                    case 4:
-                         ejecutando = false;
-                         break;
-                    default:
-                         System.out.println("Opcion invalida");
-               }
-          }
-          sc.close();
-     }
+        sc.close();
+    }
 }
