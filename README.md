@@ -131,6 +131,8 @@ flowchart TD;
         </p>
 </details>
 
+<br style="height:100px;"></br>
+
 ## Codigo
 | Estructurado | POO |
 |----|----|
