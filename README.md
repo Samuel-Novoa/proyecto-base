@@ -132,4 +132,6 @@ flowchart TD;
 </details>
 
 ## Codigo
-[VER Codigo](/proyecto.java)
+| Estructurado | POO |
+|----|----|
+| [VER Codigo](/Porgramacion%20%5B%20EST%20-%20POO%5D/ESTRUCTURADA/proyecto.java) | [VER Codigo](/Porgramacion%20%5B%20EST%20-%20POO%5D/POO/Proyecto%20Estudiantes/) |
