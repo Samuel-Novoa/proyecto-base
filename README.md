@@ -83,5 +83,48 @@ flowchart TD;
 
 ## Seudocodigo
 <details><summary>Desplegar</summary>
-        <p></p>
+        <p>
+        <code>
+        Algoritmo proyecto
+    Definir sc Como Nuevo Scanner
+    Definir codigoProductos[50] Como Entero
+    Definir nombreProductos[50] Como Caracter
+    Definir precioProductos[50] Como Real
+    Definir codigoProducto, descuento, cantidadProductos Como Entero
+    Definir nombreProducto Como Caracter
+    Definir precioProducto, total Como Real
+
+    descuento <- 10
+    total <- 0
+
+    Escribir "Digite la cantidad de productos: "
+    Leer cantidadProductos
+
+    Para i <- 0 Hasta cantidadProductos-1 Hacer
+        Escribir "Codigo del producto [" + i + "]: "
+        Leer codigoProducto
+
+        Escribir "Digite el nombre del producto [" + i + "]: "
+        Leer nombreProducto
+
+        Escribir "Digite el precio del producto [" + i + "]: "
+        Leer precioProducto
+
+        codigoProductos[i] <- codigoProducto
+        nombreProductos[i] <- nombreProducto
+        precioProductos[i] <- precioProducto
+    Fin Para
+
+    Para i <- 0 Hasta cantidadProductos-1 Hacer
+        total <- (precioProductos[i] * descuento) / 100
+    Fin Para
+
+    Escribir "Descuento: " + descuento + "%"
+    Escribir "Total a pagar: " + total
+
+    Cerrar sc
+Fin Algoritmo
+
+        </code>
+        </p>
 </details>
