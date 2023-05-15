@@ -72,8 +72,8 @@ flowchart TD;
     G1 --> F;
     F --> H1{{"Escribir: Descuento:  + descuento + %<br>Escribir: Total a pagar: + total"}} --> I1([Fin]);
     G["codigoProductos[i] <- codigoProductonombreProductos[i] <- nombreProductoprecioProductos[i] <- precioProducto"] --> E
-    E --> H{{Digite la identificacion del estudiante}} --> I[/leer: identificacion\] --> J{{Digite el nombre del estudiante}} --> K[/leer: nombre\] --> L[/Digite el curso del estudiante\] --> M{{leer: curso}} --> N[/Digita la nota 1 del estudiante\] --> O{{leer: notauno}} --> P[/Digite la nota 2 del estudiante\] --> Q{{leer: notados}} --> R[/Digite la nota 3 del estudiante\] --> S{{leer: notatres}};
-    S --> G;
+    E --> H{{"Codigo del producto [i]: "}} --> I[/leer: codigoProducto\] --> J{{"Digite el nombre del producto [i]:"}} --> K[/leer: nombreProducto\] --> L[/"Digite el precio del producto [i]:"\] --> M{{leer: precioProducto}};
+    M --> G;
 ```
         
 </p>
